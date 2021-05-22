@@ -30,8 +30,32 @@ php artisan migrate
 ~~~
 
 ## Application Integration
+For Laravel 6
+~~~php
+add mysql channels:
+   'channels' => [
+        'stack' => [
+            'driver' => 'stack',
+            'channels' => ['single','mysql'],
+            'ignore_exceptions' => false,
+        ],
 
-In your application `bootstrap/app.php` add:
+        'mysql' => [
+            'driver' => 'monolog',
+            'handler' => MysqlHandler::class,
+            'level' => 'debug',
+        ],
+        
+        'single' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/laravel.log'),
+            'level' => 'debug',
+        ],
+
+~~~
+
+
+For Old Laravel version In your application `bootstrap/app.php` add:
 
 ~~~php
 $app->configureMonologUsing(function($monolog) use($app) {
