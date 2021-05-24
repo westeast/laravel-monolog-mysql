@@ -17,5 +17,5 @@
             "Logger": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "v1.0.0",
 }
