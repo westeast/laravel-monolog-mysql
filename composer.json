@@ -2,7 +2,7 @@
     "name": "westeast/laravel-monolog-mysql",
     "description": "Laravel 6 MySQL driver for Monolog",
     "keywords": ["laravel", "laravel6", "log", "monolog", "mysql"],
-    "homepage": "https://github.com/markhilton/monolog-mysql",
+    "homepage": "https://github.com/westeast/laravel-monolog-mysql",
     "type": "library",
     "license": "MIT",
     "authors": [{
