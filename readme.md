@@ -21,7 +21,11 @@ Open up `config/app.php` and find the `providers` key.
 Publish config using Laravel Artisan CLI.
 
 ~~~
+#先执行这个清除下缓存再publish
+php artisan config:clear
+
 php artisan vendor:publish
+
 ~~~
 
 Migrate tables.
