@@ -5,6 +5,7 @@ This package will log errors into MySQL database instead storage/log/laravel.log
 ### Installation
 
 ~~~
+# composer 先升级为2.0 https://getcomposer.org/download/ 不然报找不到包的错误
 composer require westeast/laravel-monolog-mysql
 ~~~
 
