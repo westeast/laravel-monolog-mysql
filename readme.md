@@ -37,7 +37,10 @@ php artisan migrate
 ## Application Integration
 For Laravel 6
 ~~~php
-add mysql channels:
+//add use 
+use Logger\Monolog\Handler\MysqlHandler;
+
+// add mysql channels to config/logging.php:
    'channels' => [
         'stack' => [
             'driver' => 'stack',
